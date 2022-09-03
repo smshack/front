@@ -4,7 +4,6 @@ import { useHistory, useParams } from "react-router-dom/cjs/react-router-dom";
 import Layout1 from "./Layout1";
 const Layout = ({ match }) => {
   useEffect(() => {
-    console.log(match);
   }, []);
   return (
     <div className="Layout">
