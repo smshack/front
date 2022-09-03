@@ -1,0 +1,64 @@
+    //   {/* float 방식 레이아웃 */}
+.Layout4 {
+    width: 1200px;
+    margin: 0 auto;
+    .header {
+        width: 1200px;
+        height: 100px;
+        background-color: #C8E6C9;
+
+    }
+    
+    .nav {
+        width: 1200px;
+        height: 100px;
+        background-color: #A5D6A7;
+    }
+
+    .main{
+        width: 1200px;
+        overflow: hidden;
+        .aside {
+            width: 300px;
+            height: 780px;
+            background-color: #81C784;
+            float: left;
+        }
+
+        .section {
+            width: 600px;
+            height: 780px;
+            background-color: #66BB6A;
+            float: left;
+        }
+
+        .article {
+            width: 300px;
+            height: 780px;
+            background-color: #4CAF50;
+            float: left;
+        }
+    }
+
+    .footer {
+        width: 1200px;
+        height: 100px;
+        background-color: #43A047;
+        clear:both;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .Layout4 {
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    .Layout4 {
+    }
+}
+
+@media (max-width: 479px){
+    .Layout4 {
+    }
+}
