@@ -3,55 +3,50 @@
   margin: 0 auto;
 
   .header {
-    width: 1200px;
     height: 100px;
     background-color: #b3e5fc;
   }
 
   .nav {
-    width: 1200px;
     height: 100px;
     background-color: #81d4fa;
   }
   .main {
-    width: 1200px;
-
     .aside {
-      width: 300px;
+      width: 30%;
       height: 780px;
       background-color: #4fc3f7;
       float: left;
     }
 
     .article1 {
-      width: 900px;
+      width: 70%;
       height: 260px;
       background-color: #29b6f6;
       float: left;
     }
 
     .article2 {
-      width: 900px;
+      width: 70%;
       height: 260px;
       background-color: #03a9f4;
       float: left;
     }
 
     .article3 {
-      width: 900px;
+      width: 70%;
       height: 260px;
       background-color: #039be5;
       float: left;
     }
 
     .footer {
-      width: 1200px;
       height: 100px;
       background-color: #0288d1;
     }
   }
 }
-
+// float 버그를 수정할 수 있게 해주는 요소
 /* clearfix */
 .clearfix::before,
 .clearfix::after {
@@ -62,4 +57,56 @@
 
 .clearfix::after {
   clear: both;
+}
+
+@media (max-width: 1300px) {
+  .Layout7 {
+    width: 96%;
+    .main {
+      .article2 {
+        width: 35%;
+        height: 520px;
+      }
+      .article3 {
+        width: 35%;
+        height: 520px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Layout7 {
+    width: 100%;
+    .main {
+      .article1 {
+        width: 70%;
+        height: 390px;
+      }
+      .article2 {
+        width: 70%;
+        height: 390px;
+      }
+      .article3 {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .Layout7 {
+    .main {
+      .aside {
+        width: 100%;
+        height: 100px;
+      }
+      .article1 {
+        width: 100%;
+        height: 430px;
+      }
+      .article2 {
+        width: 100%;
+        height: 150px;
+      }
+    }
+  }
 }
