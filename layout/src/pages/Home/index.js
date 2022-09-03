@@ -11,10 +11,10 @@ const Home = () => {
             <Link to={`/layout/layout1`}>레이아웃1</Link>
           </li>
           <li>
-            <Link to={`/layout/layout1`}>레이아웃1</Link>
+            <Link to={`/layout/layout2`}>레이아웃2</Link>
           </li>
           <li>
-            <Link to={`/layout/layout1`}>레이아웃1</Link>
+            <Link to={`/layout/layout3`}>레이아웃3</Link>
           </li>
         </ul>
       </div>
