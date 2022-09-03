@@ -1,0 +1,53 @@
+.Layout8 {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            height: 100px;
+            background-color: #B3E5FC;
+        }
+        .nav {
+            height: 100px;
+            background-color: #81D4FA;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 780px;
+        }
+        .aside {
+            width: 30%;
+            height: 780px;
+            background-color: #4FC3F7;
+        }
+        .article1 {
+            width: 70%;
+            height: 260px;
+            background-color: #29B6F6;
+        }
+        .article2 {
+            width: 70%;
+            height: 260px;
+            background-color: #03A9F4;
+        }
+        .article3 {
+            width: 70%;
+            height: 260px;
+            background-color: #039BE5;
+        }
+        .footer {
+            height: 100px;
+            background-color: #0288D1;
+        }
+
+        /* 미디어쿼리 */
+        @media (max-width: 1300px){
+            
+        }
+        @media (max-width: 768px){
+            
+        }
+        @media (max-width: 480px){
+            
+        }
