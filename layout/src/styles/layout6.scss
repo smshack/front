@@ -50,18 +50,20 @@
     .Layout6 {
         width: 100%;
         .main{
-             flex-wrap: wrap;
+              grid-template-areas: 
+                    "aside section"
+                    "article article"
+                ;
+                grid-template-columns: 30% 70%;
+                grid-template-rows: 680px 150px;
             .aside {
-                width: 30%;
-                height: 630px;
+                 grid-area: aside;
             }
             .section {
-                width: 70%;
-                height: 630px;
+                grid-area: section;
             }
             .article {
-                width: 100%;
-                height: 150px;
+                grid-area: article;
             }
         }
          
@@ -71,19 +73,13 @@
 @media (max-width: 479px){
     .Layout6 {
         .main{
-            flex-wrap: wrap;
-            .aside {
-                width: 100%;
-                height: 200px;
-            }
-            .section {
-                width: 100%;
-                height: 430px;
-            }
-            .article {
-                width: 100%;
-                height: 150px;
-            }
+            grid-template-areas: 
+                    "aside"
+                    "section"
+                    "article"
+                ;
+            grid-template-columns: 100%;
+            grid-template-rows: 200px 430px 150px;
         }
     }
 }
