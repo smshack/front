@@ -5,6 +5,7 @@ import Layout1 from "./Layout1";
 import Layout2 from "./Layout2";
 import Layout3 from "./Layout3";
 import Layout4 from "./Layout4";
+import Layout5 from "./Layout5";
 const Layout = ({ match }) => {
   useEffect(() => {
   }, []);
@@ -14,6 +15,7 @@ const Layout = ({ match }) => {
       <Route path={`${match.path}/layout2`} component={Layout2} />
       <Route path={`${match.path}/layout3`} component={Layout3} />
       <Route path={`${match.path}/layout4`} component={Layout4} />
+      <Route path={`${match.path}/layout5`} component={Layout5} />
     </div>
   );
 };
