@@ -7,8 +7,10 @@ const Layout8 = () => {
       <div className="main clearfix">
         <div className="aside">aside</div>
         <div className="article1">article1</div>
-        <div className="article2">article2</div>
-        <div className="article3">article3</div>
+        <div className="article2">
+          <div className="article2-1">article2</div>
+          <div className="article2-2">article3</div>
+        </div>
       </div>
       <div className="footer">footer</div>
     </div>
