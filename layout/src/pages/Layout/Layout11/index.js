@@ -9,7 +9,7 @@ const Layout11 = () => {
         <div className="container"></div>
       </nav>
       <main>
-        <div className="contents container">
+        <div className="contents container clearfix">
           <div className="cont1"></div>
           <div className="cont2"></div>
           <div className="cont3"></div>
