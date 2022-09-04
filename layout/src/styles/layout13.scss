@@ -1,0 +1,62 @@
+.Layout13 {
+  header {
+    height: 100px;
+    background-color: #eeebe9;
+  }
+
+  nav {
+    height: 100px;
+    background-color: #b9aaa5;
+  }
+
+  main {
+    height: 780px;
+    background-color: #886f65;
+    .contents {
+      display: grid;
+      grid-template-areas:
+        "cont1 cont1"
+        "cont2 cont2"
+        "cont3 cont4";
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 100px 200px 480px;
+      .cont1 {
+        background-color: #74574a;
+        grid-area: cont1;
+      }
+      .cont2 {
+        background-color: #684d43;
+        grid-area: cont2;
+      }
+
+      .cont3 {
+        background-color: #594139;
+        grid-area: cont3;
+      }
+
+      .cont4 {
+        background-color: #4a352f;
+        grid-area: cont4;
+      }
+    }
+  }
+
+  footer {
+    height: 100px;
+    background-color: #4e342e;
+  }
+  .container {
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  /* 미디어쿼리 */
+  @media (max-width: 1300px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
+}
