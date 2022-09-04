@@ -15,25 +15,36 @@
     .contents {
       display: flex;
       flex-wrap: wrap;
-      .cont1 {
+      .left {
         width: 100%;
         height: 100px;
-        background-color: #74574a;
+        .cont1 {
+          width: 100%;
+          height: 100px;
+          background-color: #74574a;
+        }
       }
-      .cont2 {
+
+      .right {
         width: 100%;
-        height: 200px;
-        background-color: #684d43;
-      }
-      .cont3 {
-        width: 50%;
-        height: 480px;
-        background-color: #594139;
-      }
-      .cont4 {
-        width: 50%;
-        height: 480px;
-        background-color: #4a352f;
+        height: 680px;
+        display: flex;
+        flex-wrap: wrap;
+        .cont2 {
+          width: 100%;
+          height: 200px;
+          background-color: #684d43;
+        }
+        .cont3 {
+          width: 50%;
+          height: 480px;
+          background-color: #594139;
+        }
+        .cont4 {
+          width: 50%;
+          height: 480px;
+          background-color: #4a352f;
+        }
       }
     }
   }
@@ -51,9 +62,94 @@
 
   /* 미디어쿼리 */
   @media (max-width: 1300px) {
+    .container {
+      width: 96%;
+    }
+    main {
+      .contents {
+        .left {
+          .cont1 {
+          }
+        }
+
+        .right {
+          .cont2 {
+          }
+          .cont3 {
+          }
+          .cont4 {
+          }
+        }
+      }
+    }
   }
   @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+    main {
+      .contents {
+        display: flex;
+        .left {
+          width: 30%;
+          height: 780px;
+          .cont1 {
+            width: 100%;
+            height: 780px;
+          }
+        }
+
+        .right {
+          width: 70%;
+          height: 780px;
+          display: flex;
+          flex-wrap: wrap;
+          .cont2 {
+            width: 100%;
+            height: 390px;
+          }
+          .cont3 {
+            width: 50%;
+            height: 390px;
+          }
+          .cont4 {
+            width: 50%;
+            height: 390px;
+          }
+        }
+      }
+    }
   }
   @media (max-width: 480px) {
+    main {
+      .contents {
+        flex-wrap: wrap;
+        .left {
+          width: 100%;
+          height: 150px;
+          .cont1 {
+            width: 100%;
+            height: 150px;
+          }
+        }
+
+        .right {
+          width: 100%;
+          height: 630px;
+          .cont2 {
+            width: 100%;
+            height: 210px;
+          }
+          .cont3 {
+            width: 100%;
+            height: 210px;
+          }
+          .cont4 {
+            width: 100%;
+            height: 210px;
+          }
+        }
+      }
+    }
   }
 }

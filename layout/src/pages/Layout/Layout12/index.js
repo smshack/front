@@ -10,10 +10,14 @@ const Layout12 = () => {
       </nav>
       <main>
         <div className="contents container clearfix">
-          <div className="cont1"></div>
-          <div className="cont2"></div>
-          <div className="cont3"></div>
-          <div className="cont4"></div>
+          <div className="left">
+            <div className="cont1"></div>
+          </div>
+          <div className="right">
+            <div className="cont2"></div>
+            <div className="cont3"></div>
+            <div className="cont4"></div>
+          </div>
         </div>
       </main>
       <footer>
