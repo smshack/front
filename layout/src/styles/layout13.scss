@@ -54,9 +54,45 @@
 
   /* 미디어쿼리 */
   @media (max-width: 1300px) {
+    .container {
+      width: 96%;
+    }
+    main {
+      .contents {
+        grid-template-areas:
+          "cont1 cont2 cont2"
+          "cont1 cont3 cont4";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
   }
   @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+    main {
+      .contents {
+        grid-template-areas:
+          "cont1 cont2"
+          "cont1 cont3"
+          "cont1 cont4";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: repeat(3, 1fr);
+      }
+    }
   }
   @media (max-width: 480px) {
+    main {
+      .contents {
+        grid-template-areas:
+          "cont1"
+          "cont2"
+          "cont3"
+          "cont4";
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 210px 210px 210px;
+      }
+    }
   }
 }
