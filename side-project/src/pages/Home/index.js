@@ -2,28 +2,40 @@ import React from 'react'
 import {  Route, Link } from "react-router-dom";
 
 const Home = () => {
-  const layoutlist = [
-    {
-      title: "레이아웃1",
-      path: "layout1",
-    },
-    
-  ];
+
   return (
-    <div className="home">
-      <div className="layout-nav">
-        <h1>홈</h1>
-        <ul>
-{/*           
-          {layoutlist.map((val,key) => {
-            return (
+    <div className="wrapper">
+      <header id="headerType" className="header__wrap nexon">
+        <div className="header__inner">
+          <div className="header__logo">
+            <Link to="#">
+              web <em>site</em>
+            </Link>
+          </div>
+          <nav className="header__menu">
+            <ul>
               <li>
-                <Link to={`/layout/${val.path}`}>{val.title}</Link>
+                <Link to="#">헤더 영역</Link>
               </li>
-            );
-          })} */}
-        </ul>
-      </div>
+              <li>
+                <Link to="#">슬라이드 영역</Link>
+              </li>
+              <li>
+                <Link to="#">배너 영역</Link>
+              </li>
+              <li>
+                <Link to="#">컨텐츠 영역</Link>
+              </li>
+              <li>
+                <Link to="#">푸터 영역</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className="header__member">
+            <Link to="#">로그인</Link>
+          </div>
+        </div>
+      </header>
     </div>
   );
 }
