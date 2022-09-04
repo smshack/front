@@ -3,16 +3,16 @@ const Layout10 = () => {
   return (
     <div className="Layout10 wrapper">
       <header>
-        <div className="header__container"></div>
+        <div className="container"></div>
       </header>
       <nav>
-        <div className="nav__container"></div>
+        <div className="container"></div>
       </nav>
       <section>
-        <div className="section__container"></div>
+        <div className="container"></div>
       </section>
       <footer>
-        <div className="footer__container"></div>
+        <div className="container"></div>
       </footer>
     </div>
   );
