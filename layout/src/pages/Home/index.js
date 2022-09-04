@@ -55,14 +55,6 @@ const Home = () => {
       title: "레이아웃13",
       path: "layout13",
     },
-    {
-      title: "레이아웃14",
-      path: "layout14",
-    },
-    {
-      title: "레이아웃15",
-      path: "layout15",
-    },
   ];
   return (
     <div className="home">

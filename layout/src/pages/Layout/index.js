@@ -14,8 +14,7 @@ import Layout10 from "./Layout10";
 import Layout11 from "./Layout11";
 import Layout12 from "./Layout12";
 import Layout13 from "./Layout13";
-import Layout14 from "./Layout14";
-import Layout15 from "./Layout15";
+
 
 const Layout = ({ match }) => {
   useEffect(() => {
@@ -35,8 +34,6 @@ const Layout = ({ match }) => {
       <Route path={`${match.path}/layout11`} component={Layout11} />
       <Route path={`${match.path}/layout12`} component={Layout12} />
       <Route path={`${match.path}/layout13`} component={Layout13} />
-      <Route path={`${match.path}/layout14`} component={Layout14} />
-      <Route path={`${match.path}/layout15`} component={Layout15} />
     </div>
   );
 };
