@@ -1,5 +1,7 @@
 #cardType {
-  padding: 120px 0;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 120px 20px;
   h2 {
     font-size: 50px;
     font-weight: 500;
@@ -14,6 +16,9 @@
     line-height: 1.5;
     color: #777;
     text-align: center;
+  }
+  figure {
+    margin: auto;
   }
   .card__inner {
     display: flex;

@@ -1,0 +1,55 @@
+#bannerType {
+  margin: 0 auto;
+  padding: 120px 20px;
+  h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1;
+    text-align: center;
+  }
+  p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    line-height: 1.5;
+    color: #777;
+    text-align: center;
+  }
+  &.banner__wrap {
+    background-image: url(https://webstoryboy.github.io/web2022/webs_img/banner_bg01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     .banner__inner {
+            text-align: center;
+            color: #fff;
+        }
+    .banner__title {
+      font-size: 50px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+    .banner__desc {
+      font-size: 24px;
+      line-height: 1.5;
+      font-weight: 300;
+      margin-bottom: 70px;
+      a {
+        display: block;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 300;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 70px;
+      }
+    }
+  }
+  .banner__sub {
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+}
