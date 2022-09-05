@@ -1,6 +1,15 @@
 #bannerType {
   margin: 0 auto;
   padding: 120px 20px;
+  //    안보이게 처리
+  .ir_so {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
   h2 {
     font-size: 50px;
     font-weight: 500;
@@ -21,10 +30,10 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-     .banner__inner {
-            text-align: center;
-            color: #fff;
-        }
+    .banner__inner {
+      text-align: center;
+      color: #fff;
+    }
     .banner__title {
       font-size: 50px;
       font-weight: 300;
